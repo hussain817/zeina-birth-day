@@ -333,7 +333,7 @@ body {
 }
 .right .balloon_one{
     position: absolute;
-    top: -110px;
+    top: -70px;
     left: -70px;
     animation: balloon1 2s infinite linear;
 }
@@ -381,20 +381,18 @@ body {
     clip-path: polygon(0 50%, 35% 35%, 50% 0, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%);
     animation: scaleCricle 3s var(--t) forwards, 
             scaleStar 2s 16s infinite ease-in-out;
-    
+}
 .decorate_star.star1{
     width: 20px;
     height: 20px;
-    top: 75px;    /* تم رفعها لأعلى (كانت 75px) */
-    left: 300px;  /* تم تحريكها لليسار أكثر (كانت 300px) */
+    top: 75px;
+    left: 300px;
 }
-
 .decorate_star.star2{
     width: 15px;
     height: 20px;
-    top: 35px;    /* تم رفعها لأعلى (كانت 35px) */
-    right: 360px; /* المكان الأفقي كما هو */
-}
+    top: 35px;
+    right: 360px;
 }
 .decorate_star.star3{
     width: 14px;
@@ -685,36 +683,16 @@ body {
         transition: all .5s ease-in-out;
     }
 
-/* 1. جعل الحاوية هي المرجع لعدم خروج الدائرة */
-.right {
-  position: relative;
-}
-
-/* 2. تموضع الدائرة المظبوط */
-.cricle {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 3. دوران الدائرة فقط وبحجم ثابت */
-.cricle .text__cricle {
-  scale: 0.5;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
-}
+    .cricle {
+        position: absolute;
+        top: 10px;
+        right: -54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0);
+        animation: scaleCricle 3s 15s forwards ease-in-out;
+    }
 
     .title .hat {
         position: absolute;
@@ -1109,37 +1087,4 @@ body {
 /* إخفاء الموقع كلياً قبل إدخال الباسوورد */
 .hidden-site {
     display: none !important;
-}
-
-/* ========================================== */
-/* إصلاح التمدد والخروج عن الشاشة للموبايل */
-/* ========================================== */
-
-html, body, #wrapper {
-    overflow-x: hidden !important;
-    max-width: 100% !important;
-}
-
-@media screen and (max-width: 658px) {
-    /* 1. منع الطاقية من الخروج يمين الشاشة */
-    .title .hat {
-        right: 0px !important;
-    }
-
-    /* 2. تثبيت الحاوية لضمان بقاء العناصر داخلها */
-    .content .right {
-        position: relative !important;
-        width: 100% !important;
-    }
-
-    /* 3. ضبط مكان الدائرة فوق كارت الصورة مباشرة */
-    .cricle {
-        right: 10px !important;
-        top: -10px !important;
-    }
-
-    /* 4. منع البالونات والنجوم من مط الشاشة لليمن */
-    .right .balloon_two {
-        right: 0px !important;
-    }
 }
