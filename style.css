@@ -632,97 +632,6 @@ body {
 
 @media screen and (max-width: 658px)   {
 
-
-/* ===== Mobile Fix ===== */
-
-.content .left,
-.content .right{
-    width:100%;
-}
-
-.date__of__birth{
-    width:220px !important;
-}
-
-.date__of__birth span{
-    font-size:1rem;
-}
-
-.cricle{
-    right:-20px;
-    top:-10px;
-    transform:scale(.8);
-}
-
-.box__account{
-    width:100%;
-    display:flex;
-    justify-content:center;
-}
-
-.boxMail .boxMail-container{
-    width:95%;
-    height:auto;
-    flex-direction:column;
-    transform:none;
-}
-
-.boxMail .boxMail-container:hover{
-    transform:none;
-}
-
-.boxMail .boxMail-container .card1,
-.boxMail .boxMail-container .card2{
-    position:relative;
-    width:100%;
-    height:auto;
-    left:0;
-    top:0;
-    transform:none;
-}
-
-.boxMail .boxMail-container:hover .card1{
-    transform:none;
-}
-
-.boxMail .boxMail-container .card1{
-    padding:25px 15px;
-}
-
-.boxMail .boxMail-container .card1 h3{
-    font-size:28px;
-    letter-spacing:2px;
-}
-
-.boxMail .boxMail-container .card2{
-    min-height:320px;
-}
-
-.boxMail .boxMail-container .card2 h3{
-    font-size:20px;
-    padding:15px;
-}
-
-.boxMail .boxMail-container .card2 h2{
-    font-size:16px;
-    line-height:1.7;
-    padding:15px;
-}
-
-.imageCute2{
-    display:none;
-}
-
-.decorate_star,
-.decorate_flower--one,
-.decorate_flower--two,
-.decorate_flower--three,
-.smiley__icon{
-    display:none;
-}
-
-
-    
     .flag__birthday .flag__left {
         transform: rotate(-10deg) translate(-119px,3px);
     }
@@ -787,22 +696,11 @@ body {
 
     .title .hat {
         position: absolute;
-        right: 15px;
-        top: -150px !important;
+        right: -98px;
+        top: -51px !important;
         transform: rotate(-40deg);
-        z-index: 1;
+        z-index: -1;
         animation: topHat 4s 7s forwards ease;
-
-        @keyframes topHatMobile {
-        20%, 30% {
-            top: -28px !important;
-            transform-origin: left;
-            transform: scale(0.4) rotate(-40deg); /* تصغير بنسبة 60% لتجنب الأعلام */
-        }
-        35%, 100% {
-            top: -28px !important;
-            transform: scale(0.4) rotate(15deg); /* الميلان المناسب لتستقر على الحرف */
-        }
     }
 
     .box__letter .letter__border {
@@ -1126,16 +1024,6 @@ body {
     z-index: 10000000000000000;
 }
 
-.date__of__birth span{
-    visibility: visible;
-}
-
-.title__letter,
-.text__letter p{
-    visibility: visible;
-}
-
-/* تنسيق نافذة كلمة المرور */
 .password-overlay {
     position: fixed;
     top: 0;
