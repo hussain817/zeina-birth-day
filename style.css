@@ -787,11 +787,22 @@ body {
 
     .title .hat {
         position: absolute;
-        right: -98px;
-        top: -51px !important;
+        right: 15px;
+        top: -150px !important;
         transform: rotate(-40deg);
-        z-index: -1;
+        z-index: 1;
         animation: topHat 4s 7s forwards ease;
+
+        @keyframes topHatMobile {
+        20%, 30% {
+            top: -28px !important;
+            transform-origin: left;
+            transform: scale(0.4) rotate(-40deg); /* تصغير بنسبة 60% لتجنب الأعلام */
+        }
+        35%, 100% {
+            top: -28px !important;
+            transform: scale(0.4) rotate(15deg); /* الميلان المناسب لتستقر على الحرف */
+        }
     }
 
     .box__letter .letter__border {
