@@ -697,6 +697,19 @@ body {
     }
     .cricle .text__cricle {
     transform: scale(0.5); /* نسبة التصغير (0.7 تعني 70% من حجمها الأصلي) */
+        /* غير your-element لاسم الكلاس الخاص بعنصرك */
+.your-element {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.5);
+  }
+}
 }
 
     .title .hat {
