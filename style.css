@@ -690,6 +690,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        opacity: 0;
         transform: scale(0.1);
         animation: scaleCricle 3s 15s forwards ease-in-out;
 
