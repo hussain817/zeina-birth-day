@@ -685,31 +685,30 @@ body {
         transition: all .5s ease-in-out;
     }
 
-    .cricle {
-        position: absolute;
-        top: -30px;
-        right: -80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: scale(0);
-        animation: scaleCricle 3s 15s forwards ease-in-out;
-    }
-    .cricle .text__cricle {
-    transform: scale(0.5); /* نسبة التصغير (0.7 تعني 70% من حجمها الأصلي) */
-        /* غير your-element لاسم الكلاس الخاص بعنصرك */
-.your-element {
-  animation: spin 2s linear infinite;
+.cricle {
+  position: absolute;
+  top: -30px;
+  right: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cricle .text__cricle {
+  scale: 0.5; /* ثبتنا الحجم على 0.5 حتى لا تكبر ولا تصغر */
+  animation: spin 2s linear infinite; /* جعلناها تلف فقط */
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg) scale(0.5);
+    rotate: 0deg;
   }
   100% {
-    transform: rotate(360deg) scale(0.5);
+    rotate: 360deg;
   }
 }
+
+@keyframe
 }
 
     .title .hat {
