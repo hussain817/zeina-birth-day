@@ -695,7 +695,7 @@ body {
 }
 
 .cricle .text__cricle {
-  scale: 0.5; /* ثبتنا الحجم على 0.5 حتى لا تكبر ولا تصغر */
+  scale: 0.3; /* ثبتنا الحجم على 0.5 حتى لا تكبر ولا تصغر */
   animation: spin 2s linear infinite; /* جعلناها تلف فقط */
 }
 
