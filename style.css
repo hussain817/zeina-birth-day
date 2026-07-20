@@ -385,14 +385,14 @@ body {
 .decorate_star.star1{
     width: 20px;
     height: 20px;
-    top: -100px;    /* تم رفعها لأعلى (كانت 75px) */
-    left: -400px;  /* تم تحريكها لليسار أكثر (كانت 300px) */
+    top: 75px;    /* تم رفعها لأعلى (كانت 75px) */
+    left: 300px;  /* تم تحريكها لليسار أكثر (كانت 300px) */
 }
 
 .decorate_star.star2{
     width: 15px;
     height: 20px;
-    top: -400px;    /* تم رفعها لأعلى (كانت 35px) */
+    top: 35px;    /* تم رفعها لأعلى (كانت 35px) */
     right: 360px; /* المكان الأفقي كما هو */
 }
 }
