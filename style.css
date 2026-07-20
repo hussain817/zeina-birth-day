@@ -685,18 +685,25 @@ body {
         transition: all .5s ease-in-out;
     }
 
+/* 1. جعل الحاوية هي المرجع لعدم خروج الدائرة */
+.right {
+  position: relative;
+}
+
+/* 2. تموضع الدائرة المظبوط */
 .cricle {
   position: absolute;
-  top: -30px;
-  right: -80px;
+  top: -20px;
+  right: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* 3. دوران الدائرة فقط وبحجم ثابت */
 .cricle .text__cricle {
-  scale: 0.3; /* ثبتنا الحجم على 0.5 حتى لا تكبر ولا تصغر */
-  animation: spin 2s linear infinite; /* جعلناها تلف فقط */
+  scale: 0.5;
+  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -707,8 +714,6 @@ body {
     rotate: 360deg;
   }
 }
-
-@keyframe
 }
 
     .title .hat {
