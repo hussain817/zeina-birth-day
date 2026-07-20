@@ -728,216 +728,82 @@ body {
 /* ========================================================= */
 /* التعديل الخاص بالموبايل فقط (استبدل هذا الجزء في أسفل الملف) */
 /* ========================================================= */
+
 @media screen and (max-width: 1024px) {
-    body {
-        overflow-x: hidden;
-    }
-    
-    #wrapper {
-        width: 100%;
-        height: auto;
-        min-height: 100vh;
-        transform: none !important;
-    }
-
-    /* تقريب الأعلام في الأعلى لتلتقي بالمنتصف بشكل V ناعم */
-    .flag__birthday {
-        display: flex !important;
-        justify-content: center !important;
-        transform: translateY(-5px) !important;
-        gap: 0px !important;
-    }
-
-    .flag__birthday img {
-        width: 150px !important;
-        height: auto !important;
-    }
-
-    .flag__birthday .flag__left {
-        transform: rotate(-5deg) translate(20px, 15px) !important;
-    }
-
-    .flag__birthday .flag__right {
-        transform: rotate(5deg) translate(-20px, 15px) scaleX(-1) !important;
-    }
-    
+    /* ترتيب العناصر فوق بعض بالنص عشان ما يصير تداخل */
     .content {
         flex-direction: column !important;
-        width: 100%;
-        padding-top: 0.5rem !important;
-        gap: 10px !important;
+        align-items: center !important;
+        padding-top: 1rem !important;
     }
-    
     .content .left, .content .right {
         width: 100% !important;
-    }
-
-    /* [التعديل 3]: تصغير خط هابي بيرثداي (HAPPY BIRTHDAY) */
-    .title {
-        font-size: 1.8rem !important; 
-        margin-bottom: 5px !important;
-        letter-spacing: 1px !important;
-    }
-    
-    /* [التعديل 4]: تصغير حجم القبعة وتثبيتها على الجنب بشكل لطيف ومتناسق */
-    .title .hat {
-        top: -45px !important;
-        right: 15px !important;
-        transform: scale(0.45) rotate(10deg) !important; 
-        z-index: 10 !important;
-    }
-
-    /* [التعديل 2]: تصغير خط التاريخ (10 Jul) ليكون أكبر من خط الزر بفارق بسيط جداً */
-    .date__of__birth {
-        width: 170px !important;
-        height: 35px !important;
-        margin-top: 5px !important;
         display: flex !important;
-        justify-content: center !important;
+        flex-direction: column !important;
         align-items: center !important;
     }
 
+    /* تصغير خط هابي بيرثداي والقبعة */
+    .title {
+        font-size: 2.2rem !important;
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+    .title .hat {
+        top: -35px !important;
+        right: 15px !important;
+        transform: scale(0.5) rotate(10deg) !important;
+    }
+
+    /* تصغير التاريخ والزر وتوسيطهم */
+    .date__of__birth {
+        width: 200px !important;
+        height: 40px !important;
+        margin: 10px auto !important;
+        transform: none !important;
+    }
     .date__of__birth span {
-        font-size: 1.05rem !important; /* حجم خط التاريخ */
-        margin: 0px !important;
-    }
-
-    /* الزر أو الخط الموجود تحت التاريخ مباشرة */
-    #btn__letter {
-        font-size: 0.9rem !important; /* أصغر بفارق بسيط وناعم عن خط التاريخ */
-        padding: 5px 18px !important;
-        margin-top: 8px !important;
-        width: auto !important;
-    }
-
-    /* [التعديل 1]: تصغير حجم صورة البنت وتوسيطها */
-    .right .box__account {
-        margin-top: 15px !important;
-        margin-bottom: 25px !important;
-        width: 100% !important;
-        display: flex !important;
-        justify-content: center !important;
-        position: relative !important;
-    }
-
-    .content .right .image {
-        width: 150px !important; /* تصغير قطر الدائرة لتصبح ناعمة وصغيرة وصورة البنت بداخلها متناسقة */
-        height: 150px !important;
-        margin: 0 auto !important;
-    }
-    
-    .name {
-        bottom: -10px !important;
-        padding: 2px 15px !important;
-        width: auto !important;
-    }
-    
-    .name span {
         font-size: 1.1rem !important;
+        margin: 0 !important;
+    }
+    #btn__letter {
+        font-size: 1rem !important;
+        margin: 15px auto 30px auto !important;
     }
 
-    /* [التعديل 1]: تصغير البوالين وتوزيعها على الجوانب تماماً مثل اللابتوب بدلاً من العشوائية */
+    /* تصغير صورة البنت والبالونات */
+    .right .box__account {
+        margin-top: 20px !important;
+        transform: none !important;
+    }
+    .content .right .image {
+        width: 220px !important;
+        height: 220px !important;
+    }
+    .right .balloon_one, .right .balloon_two {
+        transform: scale(0.45) !important;
+    }
     .right .balloon_one {
-        top: -15px !important;
-        left: 20px !important; /* سحب البالون الأول إلى الجانب الأيسر للصورة */
-        transform: scale(0.4) !important; 
-        z-index: -1 !important;
+        top: -10px !important;
+        left: -10px !important;
     }
-    
-    .right .balloon_one img {
-        width: 70px !important;
-    }
-
     .right .balloon_two {
-        bottom: -15px !important;
-        top: auto !important;
-        right: 20px !important; /* سحب البالون الثاني إلى الجانب الأيمن للصورة */
-        transform: scale(0.4) !important; 
-        z-index: -1 !important;
-    }
-    
-    .right .balloon_two img {
-        width: 70px !important;
+        bottom: -10px !important;
+        right: -10px !important;
     }
 
-    /* الدائرة الجانبية الصغيرة */
-    .cricle {
-        top: 50% !important;
-        right: 0px !important;
-        transform: translateY(-50%) scale(0.65) !important;
+    /* الأعلام فوق */
+    .flag__birthday {
+        justify-content: center !important;
+        transform: translateY(0) !important;
     }
-    
-    .text__cricle {
-        width: 70px !important;
-        height: 70px !important;
+    .flag__birthday img {
+        width: 140px !important;
     }
 
-    .text__cricle span {
-        transform-origin: 0 30px !important;
-        font-size: 0.45rem !important;
-    }
-
-    /* توزيع النجوم الخمسة تحت العناصر لتزيين الخلفية دون تداخل */
-    .decorate_star {
-        display: block !important;
-        opacity: 0.7;
-    }
-
-    .decorate_star.star1 {
-        top: 10px !important;
-        left: 20px !important;
-        width: 10px !important;
-        height: 10px !important;
-    }
-
-    .decorate_star.star2 {
-        top: 35px !important;
-        right: 20px !important;
-        width: 9px !important;
-        height: 9px !important;
-    }
-
-    .decorate_star.star3 {
-        top: 150px !important;
-        left: 10px !important;
-        width: 10px !important;
-        height: 10px !important;
-    }
-
-    .decorate_star.star4 {
-        bottom: 70px !important;
-        left: 15px !important;
-        width: 10px !important;
-        height: 10px !important;
-    }
-
-    .decorate_star.star5 {
-        bottom: 20px !important;
-        right: 50px !important;
-        width: 9px !important;
-        height: 9px !important;
-    }
-    
-    /* إخفاء العناصر الزائدة المشوهة للموبايل */
-    .decorate_flower--one,
-    .decorate_flower--two,
-    .decorate_flower--three,
-    .smiley__icon,
-    .imageCute2 {
+    /* إخفاء الزينة الزايدة اللي بتشوه الشاشة */
+    .decorate_flower--one, .decorate_flower--two, .decorate_flower--three, .smiley__icon {
         display: none !important;
-    }
-    
-    /* صندوق الرسالة المنبثق على الموبايل ليكون متناسقاً */
-    .box__letter .letter__border {
-        width: 92vw !important;
-        height: 350px !important;
-    }
-    .letter__border .letter .title__letter {
-        font-size: 1.5rem !important;
-    }
-    .content__letter .right .text__letter {
-        font-size: 0.85rem !important;
-        margin-top: 0px !important;
     }
 }
 
