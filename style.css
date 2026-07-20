@@ -816,8 +816,8 @@ body {
 
 
 .decorate_flower--one{
-    top: 350px;   /* تنزل لتحت */
-    left: 20px;   /* اتركها مثل ما هي أو عدلها إذا لزم */
+    top: 420px;   /* تنزل لتحت */
+    left: -30px;   /* اتركها مثل ما هي أو عدلها إذا لزم */
 }
 
 .decorate_flower--three{
@@ -828,9 +828,13 @@ body {
 
 .decorate_star.star3{
     top: 290px;
-    left: 250px;
+    left: 280px;
 }
 
+    .decorate_star.star1 {
+    top: 75px !important;
+    left: 170px !important;
+}
 
 
 .boxMail{
