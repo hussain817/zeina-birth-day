@@ -819,7 +819,7 @@ body {
 
 
 .decorate_flower--one{
-    top: 470px;   /* تنزل لتحت */
+    top: 550px;   /* تنزل لتحت */
     left: 260px;   /* اتركها مثل ما هي أو عدلها إذا لزم */
 }
 
@@ -836,7 +836,7 @@ body {
 
     .decorate_star.star1 {
     top: 75px !important;
-    left: 188px !important;
+    left: 195px !important;
 }
 
 
