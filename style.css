@@ -1110,3 +1110,36 @@ body {
 .hidden-site {
     display: none !important;
 }
+
+/* ========================================== */
+/* إصلاح التمدد والخروج عن الشاشة للموبايل */
+/* ========================================== */
+
+html, body, #wrapper {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+@media screen and (max-width: 658px) {
+    /* 1. منع الطاقية من الخروج يمين الشاشة */
+    .title .hat {
+        right: 0px !important;
+    }
+
+    /* 2. تثبيت الحاوية لضمان بقاء العناصر داخلها */
+    .content .right {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    /* 3. ضبط مكان الدائرة فوق كارت الصورة مباشرة */
+    .cricle {
+        right: 10px !important;
+        top: -10px !important;
+    }
+
+    /* 4. منع البالونات والنجوم من مط الشاشة لليمن */
+    .right .balloon_two {
+        right: 0px !important;
+    }
+}
