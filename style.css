@@ -685,8 +685,8 @@ body {
 
     .cricle {
         position: absolute;
-        top: -35px;
-        right: -69px;
+        top: -40px;
+        right: -60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -806,8 +806,8 @@ body {
     }
 
     .right .balloon_two{
-    top: 80px;      /* ارفعها لفوق */
-    right: -35px;    /* عدل مكانها إذا لزم */
+    top: 90px;      /* ارفعها لفوق */
+    right: -40px;    /* عدل مكانها إذا لزم */
 }
 
 .right .balloon_two img{
