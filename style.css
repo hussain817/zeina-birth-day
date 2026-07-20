@@ -685,14 +685,25 @@ body {
 
     .cricle {
         position: absolute;
-        top: 10px;
-        right: -54px;
+        top: 40px;
+        right: -105px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: scale(0);
+        transform: scale(0.1);
         animation: scaleCricle 3s 15s forwards ease-in-out;
+
     }
+
+    .text__cricle{
+    width: 75px;
+    height: 75px;
+}
+
+.text__cricle span{
+    font-size: .55rem;
+    transform-origin: 0 33px;
+}
 
     .title .hat {
         position: absolute;
