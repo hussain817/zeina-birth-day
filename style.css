@@ -805,6 +805,15 @@ body {
         width: 76px !important;
     }
 
+    .right .balloon_two{
+    top: 90px;      /* ارفعها لفوق */
+    right: -25px;    /* عدل مكانها إذا لزم */
+}
+
+.right .balloon_two img{
+    width: 55px !important;   /* صغرها */
+}
+
 
 }
 
