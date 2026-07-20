@@ -175,6 +175,7 @@ body {
         transform-origin: left;
         transform: rotate(-40deg);
     }
+
     35%, 100%{
         top: -30px;
         transform: rotate(0deg);
@@ -714,18 +715,6 @@ body {
         z-index: -1;
         animation: topHat 4s 7s forwards ease;
 
-        @keyframes topHat {
-    20%, 30%{
-        top: -51px;
-        transform-origin: left;
-        transform: rotate(-40deg);
-    }
-
-    35%, 100%{
-        top: -51px;
-        transform: rotate(0deg);
-    }
-}
     }
 
     .box__letter .letter__border {
