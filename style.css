@@ -863,11 +863,11 @@ body {
 .boxMail .boxMail-container{
     position: relative;
     width: 95vw;
-    max-width: 420px;
-    height: 520px;
+    max-width: 500px;
+    height: 620px;
     display: flex;
     margin: 0;
-    transform: scale(1.1);
+    transform: scale(1);
     -webkit-perspective: 2000px;
     perspective: 2000px;
     transition: all 0.5s;
@@ -877,7 +877,7 @@ body {
     filter: drop-shadow(0 0 10px #FF7882);
 }
 .boxMail .boxMail-container:hover .card1{
-        transform: translate(-187px, -250px) rotateY(-140deg);    
+        transform: translate(-210px, -280px) rotateY(-140deg);    
 }
 .boxMail .boxMail-container .card1,
 .boxMail .boxMail-container .card2{
