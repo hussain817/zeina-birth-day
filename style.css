@@ -862,9 +862,9 @@ body {
 }
 .boxMail .boxMail-container{
     position: relative;
-    width: 92vw;
-    max-width: 430px;
-    height: 500px;
+    width: 95vw;
+    max-width: 440px;
+    height: 560px;
     display: flex;
     margin: 0;
     transform: scale(0.9);
@@ -891,7 +891,7 @@ body {
 }
 .boxMail .boxMail-container .card1 {
     position: absolute;
-    width: 30%;
+    width: 50%;
     height: 100%;
     background: linear-gradient(to right, #FF7882, #FF7882 63%);
     color: white;
@@ -938,7 +938,7 @@ body {
 }
 .boxMail .boxMail-container .card2{
     position: relative;
-    width: 70%;
+    width: 50%;
     height: 100%;
     background: linear-gradient(to right, #e0e0e0, #ffffff 30%);
     -webkit-transform-style: preserve-3d;
@@ -947,7 +947,7 @@ body {
     transition: all 1s;
 }
 .boxMail .boxMail-container .card2 .card2-content {
-    width: 100%;
+    width: 115%;
     height: 100%;
     position: relative;
     background-color: #FF7882;
